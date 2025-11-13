@@ -7,6 +7,37 @@
     <meta name="description" content="Explore Bali's top attractions including ancient temples, pristine beaches, lush rice terraces, and vibrant culture. Plan your perfect Bali adventure with our comprehensive tourism guide." />
     <meta name="author" content="Discover Bali" />
 
+    <!-- 🦋 Security Headers added manually for protection -->
+    <meta http-equiv="X-Frame-Options" content="DENY">
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
+    <meta http-equiv="Permissions-Policy" content="geolocation=(), microphone=(), camera=()">
+    <meta http-equiv="Cross-Origin-Resource-Policy" content="same-origin">
+    <meta http-equiv="Cross-Origin-Opener-Policy" content="same-origin">
+    <meta http-equiv="Cross-Origin-Embedder-Policy" content="require-corp">
+
+    <!-- 🦋 Basic CSP: adjusted for Google Maps and Vite development -->
+    <meta http-equiv="Content-Security-Policy" content="
+      default-src 'self';
+      script-src 'self' 'unsafe-inline' 'unsafe-eval' https://maps.googleapis.com https://cdn.jsdelivr.net https://cdnjs.cloudflare.com;
+      style-src 'self' 'unsafe-inline' https://fonts.googleapis.com;
+      img-src 'self' data: https: https://maps.googleapis.com https://maps.gstatic.com;
+      font-src 'self' data: https://fonts.gstatic.com;
+      connect-src 'self' https://maps.googleapis.com;
+      frame-src https://maps.google.com https://www.google.com;
+      object-src 'none';
+      base-uri 'self';
+      form-action 'self';
+    ">
+
+    <!-- 🦋 Add Subresource Integrity (SRI) for any external scripts -->
+    <!-- Example -->
+    <!-- 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+            integrity="sha256-<your-generated-hash>"
+            crossorigin="anonymous"></script>
+    -->
+
     <meta property="og:title" content="Discover Bali - Your Complete Tourism Guide" />
     <meta property="og:description" content="Explore Bali's top attractions including ancient temples, pristine beaches, lush rice terraces, and vibrant culture." />
     <meta property="og:type" content="website" />

@@ -13,6 +13,9 @@ module.exports = {
             key: "Content-Security-Policy",
             value: "default-src 'self'; img-src 'self' data: https:; style-src 'self' 'unsafe-inline'; script-src 'self';",
           },
+
+          // 🔐 Added Authorization Enforcement
+          { key: "WWW-Authenticate", value: "Basic realm=\"Secure Area\"" },
         ],
       },
     ];

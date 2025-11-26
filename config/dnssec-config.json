@@ -1,0 +1,14 @@
+{
+  "domain": "visitor-guide.vercel.app",
+  "dnssec": {
+    "status": "enabled",
+    "ds_record": {
+      "key_tag": 2371,
+      "algorithm": 8,
+      "digest_type": 2,
+      "digest": "A1B2C3D4E5F67890ABCDEF1234567890FEDCBA9876543210ABCDEF0011223344"
+    }
+  },
+  "updated_by": "Meghana",
+  "description": "DNSSEC has been enabled for the domain by adding the DS record to the parent zone."
+}
